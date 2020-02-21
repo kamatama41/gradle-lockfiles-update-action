@@ -31,7 +31,7 @@ fi
 case ${INPUT_COMMIT_STYLE:-add} in
   add)
     git add ${files};
-    git commit -m ${INPUT_COMMIT_MESSAGE:-"Fix go.sum"};
+    git commit -m ${INPUT_COMMIT_MESSAGE:-"Fix Gradle lockfiles"};
     ;;
   squash)
     git add ${files};
