@@ -1,0 +1,27 @@
+name: "Gradle lockfiles update"
+description: "Update Gradle lockfiles"
+inputs:
+  github_token:
+    description: "GITHUB_TOKEN."
+    required: true
+  git_user:
+    description: "User name of commit author."
+    required: true
+  git_email:
+    description: "E-mail address of commit author."
+    required: true
+  commit_style:
+    description: "Commit style. (add|squash)"
+    required: false
+  commit_message:
+    description: "Commit message."
+    required: false
+  push:
+    description: "Push to the branch? (no|yes|force)"
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "refresh-ccw"
+  color: "white"
