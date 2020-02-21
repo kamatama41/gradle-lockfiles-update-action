@@ -11,7 +11,7 @@ on:
       - renovate/*
 
 jobs:
-  go-mod-fix:
+  gradle-lock-fix:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
